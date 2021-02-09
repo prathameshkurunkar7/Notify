@@ -49,3 +49,21 @@
 .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track {
     opacity: 0.5 !important;
 }
+
+@media (max-width: 500px) {
+    .notes__section{
+        padding: 25px 50px;
+    }
+}
+
+@media (max-width: 420px) {
+    .notes__section{
+        padding: 12.5px 25px;
+    }
+}
+
+@media (max-width: 300px) {
+    .notes__section{
+        padding: 6px 12px;
+    }
+}
