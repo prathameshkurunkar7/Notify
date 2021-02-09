@@ -66,8 +66,14 @@ const signUp = async(req, res, next) => {
         return next(error);
     }
 
-    res.status(201).json({ userId: createdUser.id, email: createdUser.email,token:token });
-
+    res.status(201).json({
+        userId: createdUser.id, email: createdUser.email, token: token,
+        firstName:createdUser.firstName,
+        lastName:createdUser.lastName,
+        profileImage:createdUser.profileImage,
+        myNotes:createdUser.myNotes
+    });
+    
 };
 
 const login = async (req, res, next) => {
