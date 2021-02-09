@@ -14,12 +14,6 @@ function Landing() {
                 <div className="logo__name">
                     <h1>Notify</h1>
                 </div>
-                <div className="nav__links">
-                    <ul>
-                        <li>Why Notify?</li>
-                        <li>About Us</li>
-                    </ul>
-                </div>
             </div>
                 <div className="main">
                     <div className="main__text">

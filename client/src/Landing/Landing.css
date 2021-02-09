@@ -1,31 +1,21 @@
-
 .landing__nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    height: 60px;
     box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
     -webkit-box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
 }
 
-.nav__links ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    /* justify-content: space-around; */
+.logo__name{
+    margin-left: 0.5rem;
 }
 
-.nav__links ul li{
-    cursor: pointer;
-    flex: auto;
-    text-align: center;
-    padding: 0.5rem;
+.logo__name h1 {
+    font-weight: 600;
+    cursor: default;
 }
 
-.nav__links ul li:hover{
-    border-bottom: 3px solid #00B0FF;
-}
 .main__section{
     position: relative;
     height: 100vh;
@@ -38,9 +28,11 @@
 
 .main__text{
     padding: 1rem;
+    cursor: default;
 }
 .text__subtitle{
     color: #88898b;
+    cursor: default;
 }
 
 .main__image{
@@ -56,10 +48,10 @@
 }
 
 .btn{
-    color: #00B0FF;
-    background-color: transparent;
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #00B0FF  100%);
+    color: #FFFFFF;
     border: 1px solid #00B0FF;
-    border-radius: 2px;
+    border-radius: 4px;
     padding: 1.25rem 1.75rem;
     font-size: medium;
     font-weight: 600;
@@ -67,13 +59,18 @@
     line-height: 1;
     text-decoration: none;
     cursor: pointer;
+    background-size: 200% auto;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
 .btn:hover{
-    background-color: #00B0FF;
-    color: #FFFFFF;
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+.btn:focus{
+    outline: 0;
 }
 
 .custom-shape-divider-bottom-1612676159 {
@@ -128,15 +125,40 @@
 .card__body h3{
     font-size: large;
     font-weight: 500;
+    cursor: default;
 }
 
 .card__body p{
     color: #88898b;
     text-align: justify;
     margin-top: 0.5rem;
+    cursor: default;
 }
 
 .info__image{
     max-height: 250px;
     max-width: 100%;
+}
+
+@media (max-width: 800px) {
+    .landing__nav {
+        justify-content: center;
+    }
+    .info__section{
+        flex-direction: column;
+    }
+    .info__card{
+        margin-bottom: 1rem;
+    }
+    .main__text h2{
+        font-size: medium;
+    }
+    .main__text p{
+        font-size: small;
+    }
+    .main__text .btn{
+        font-size: small;
+        padding: 0.75rem 1rem;
+        font-weight: 500;
+    }
 }

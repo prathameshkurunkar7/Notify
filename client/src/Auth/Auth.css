@@ -59,6 +59,7 @@
 
 #form-section h2{
     text-align: center;
+    margin-top: 0.75rem;
 }
 
 #form-section p{
@@ -73,6 +74,10 @@
     height: 40px;
     width: 100%;
     box-sizing: border-box;
+}
+
+.input-field input:focus{
+    outline-color: #00B0FF;
 }
 
 
@@ -96,6 +101,9 @@
    text-decoration: none;
  }
 
+ .btn-grad:focus{
+     outline: 0;
+ }
 
 @media (min-width: 800px) {
     #auth-card>div{
