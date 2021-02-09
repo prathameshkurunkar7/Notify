@@ -1,0 +1,51 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin: 0 !important;
+}
+.notes__section{
+    padding: 50px 100px;
+}
+.notes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(270px,1fr));
+    position: relative;
+    margin: 50px auto;
+}
+
+.empty-notes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+}
+
+.switch{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.MuiSwitch-colorSecondary.Mui-checked {
+    color: #00B0FF !important;
+}
+
+.MuiSwitch-colorSecondary.Mui-checked + .MuiSwitch-track {
+    background-color: #00B0FF !important;
+}
+
+.MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track {
+    opacity: 0.5 !important;
+}

@@ -1,0 +1,142 @@
+
+.landing__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    -webkit-box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+
+.nav__links ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    /* justify-content: space-around; */
+}
+
+.nav__links ul li{
+    cursor: pointer;
+    flex: auto;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.nav__links ul li:hover{
+    border-bottom: 3px solid #00B0FF;
+}
+.main__section{
+    position: relative;
+    height: 100vh;
+}
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main__text{
+    padding: 1rem;
+}
+.text__subtitle{
+    color: #88898b;
+}
+
+.main__image{
+    padding: 1rem;
+}
+
+.main__text > *{
+    margin: 1rem;
+}
+
+.main-img{
+    max-width: 100%;
+}
+
+.btn{
+    color: #00B0FF;
+    background-color: transparent;
+    border: 1px solid #00B0FF;
+    border-radius: 2px;
+    padding: 1.25rem 1.75rem;
+    font-size: medium;
+    font-weight: 600;
+    font-family: sans-serif;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.btn:hover{
+    background-color: #00B0FF;
+    color: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1612676159 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1612676159 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 164px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1612676159 .shape-fill {
+    fill: #00B0FF;
+}
+
+.info__section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #00B0FF;
+    padding: 20px;
+
+}
+
+.info__card{
+    padding: 20px;
+    width: 300px;
+    min-height: 500px;
+    background-color: #ffffff;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+}
+
+.card__header{
+    min-height: 300px;
+    max-width: 300px;
+}
+
+.card__body{
+    text-align: center;
+}
+
+.card__body h3{
+    font-size: large;
+    font-weight: 500;
+}
+
+.card__body p{
+    color: #88898b;
+    text-align: justify;
+    margin-top: 0.5rem;
+}
+
+.info__image{
+    max-height: 250px;
+    max-width: 100%;
+}

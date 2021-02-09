@@ -1,0 +1,36 @@
+.note {
+    position: relative;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    cursor: pointer;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    overflow-wrap: break-word;
+}
+
+.note:focus, .note:hover {
+    -webkit-box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+
+.note .edit__icon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 25px;
+    height: 25px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    color: #00B0FF;
+}
+
+.note h1 {
+    font-size: 18px;
+}
+
+.note p {
+    margin: 0 0 10px;
+}

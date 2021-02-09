@@ -1,0 +1,55 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background: #00B0FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F80ED, #00B0FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F80ED, #00B0FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 0 10px;
+}
+
+.navbar h2{
+    display: flex;
+    align-self: center;
+    color: white;
+}
+
+#profile-menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+#profile-menu .avatar-icon{
+    width: 40px;
+    margin-right: 0.5rem;
+    background-color: #FFFFFF;
+    color: #00B0FF;
+}
+
+#profile-menu .dropdown-icon{
+    color: white;
+}
+#profile-menu p{
+    display: flex;
+    align-self: center;
+    color: white;
+}
+#profile-menu #profile-options{
+    position: absolute;
+    top: 50px;
+    border-radius: 5px;
+    padding:0 5px;
+    right: 5px;
+    border: 1px solid #d9d9d9;
+    background-color: white;
+    z-index: 999;
+}
+
+#profile-options p{
+    margin: 10px 5px;
+    color: black;
+}

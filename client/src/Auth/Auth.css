@@ -1,0 +1,117 @@
+#auth-container {
+    min-height: 100vh;
+    background: #00B0FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F80ED, #00B0FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F80ED, #00B0FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#auth-container #auth-card{
+    display: flex;
+    justify-content: center;
+}
+
+#auth-card > div {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.auth-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.auth-link:link {
+    text-decoration: none;
+}
+  
+.auth-link:visited {
+    text-decoration: none;
+}
+
+.auth-link:hover {
+    text-decoration: none;
+    color: #00B0FF;
+}
+
+.auth-link:active {
+    text-decoration: none;
+}
+
+#image-section{
+    background-color: #E2D6F8;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
+}
+
+#image-section img {
+    max-height: 300px;
+    max-width: 100%;
+}
+
+#form-section{
+    min-width: 100%;
+}
+
+#form-section h2{
+    text-align: center;
+}
+
+#form-section p{
+    text-align: center;
+}
+
+#form-section form{
+    padding: 20px;
+}
+
+.input-field input{
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #00B0FF  100%)}
+.btn-grad {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 10px;
+    font-weight: 600;
+    background-size: 200% auto;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+@media (min-width: 800px) {
+    #auth-card>div{
+        flex-direction: row;
+        min-width: 500px;
+        margin-top: 2.5rem;
+    }
+
+    #image-section{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+    }
+
+    
+    #form-section{
+        min-width: 400px;
+        min-height: 400px;
+    }
+}
